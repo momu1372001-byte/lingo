@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ALL_UNITS, ALL_LESSONS, unitStartLesson, findSentenceForWord, unitIndexOf } from '@/content/catalog';
 import type { Lesson, Word } from '@/types/content';
 import { speak } from '@/utils/speech';
+import { useProgress } from '@/state/ProgressContext';
 
 interface StudyCardsProps {
   onBack: () => void;
@@ -77,12 +78,15 @@ export default function StudyCards({ onBack, onPractice }: StudyCardsProps) {
     );
   }
 
+  const { state } = useProgress();
   const lesson: Lesson = ALL_LESSONS[deckIndex];
   const word: Word = lesson.words[cardIndex];
   const n = lesson.words.length;
   const sentence = findSentenceForWord(lesson, word);
   const grammarNote = (lesson as Lesson).grammarNotes?.[0] || GRAMMAR_NOTES[unitIndexOf(deckIndex) % GRAMMAR_NOTES.length];
-  const lang = 'ar';
+  const lang = state.settings.lang || 'ar';
+  const isArabic = lang === 'ar';
+  const translatedWord = isArabic ? word.ar : word.ar;
 
   const next = (dir: number) => {
     const ni = cardIndex + dir;
@@ -181,8 +185,8 @@ export default function StudyCards({ onBack, onPractice }: StudyCardsProps) {
                 {word.emoji}
               </div>
               <div className="cw">{word.en}</div>
-              <div className="bt">{word.ar}</div>
-              <small>{LANGS[lang]}</small>
+              <div className="bt">{translatedWord}</div>
+              <small>{LANGS[lang]}{isArabic ? '' : ' — الترجمة بهذه اللغة غير متاحة بعد، تُعرض بالعربية'}</small>
               <small className="hint">اضغط للعودة 🔄</small>
             </div>
           </div>

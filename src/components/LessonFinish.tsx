@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useProgress } from '@/state/ProgressContext';
 import { sfx } from '@/utils/audio';
 import { burst, flashScreen } from '@/utils/effects';
 import { speak } from '@/utils/speech';
+import { levelFromXp } from '@/content/catalog';
 import type { LessonMode } from '@/types/content';
 
 interface LessonFinishProps {
@@ -17,10 +18,18 @@ interface LessonFinishProps {
 
 export default function LessonFinish({ perfect, xpGained, wrongCount, mode, onStart: _onStart, onContinue, onRetry }: LessonFinishProps) {
   const { state } = useProgress();
+  const [showLevelUp, setShowLevelUp] = useState(false);
+
+  const rank = wrongCount <= 1 ? 2 : wrongCount <= 3 ? 1 : 0;
+  const stars = rank === 2 ? 3 : rank === 1 ? 2 : 1;
 
   useEffect(() => {
-    const rank = wrongCount <= 1 ? 2 : wrongCount <= 3 ? 1 : 0;
-    const stars = rank === 2 ? 3 : rank === 1 ? 2 : 1;
+    const prevLevel = levelFromXp(state.xp - xpGained);
+    const newLevel = levelFromXp(state.xp);
+    if (newLevel > prevLevel) {
+      setShowLevelUp(true);
+      setTimeout(() => sfx.lvl(), 2400);
+    }
 
     [0, 1, 2].forEach((i) => setTimeout(() => (i < stars ? sfx.star(i) : sfx.nostar()), 800 + i * 500));
 
@@ -48,8 +57,6 @@ export default function LessonFinish({ perfect, xpGained, wrongCount, mode, onSt
     }
   }, []);
 
-  const rank = wrongCount <= 1 ? 2 : wrongCount <= 3 ? 1 : 0;
-  const stars = rank === 2 ? 3 : rank === 1 ? 2 : 1;
   const medals = ['💔', '🥈', '🏆'];
   const titles = ['احتفال حزين', 'احتفال جميل!', 'احتفال أسطوري!'];
   const messages = [
@@ -61,7 +68,7 @@ export default function LessonFinish({ perfect, xpGained, wrongCount, mode, onSt
 
   return (
     <>
-      <div className="fin">
+      <div className={`fin${rank === 0 ? ' sadscr' : ''}`}>
         <div className="mascot">
           <span className={`medal ${medalClass}`}>{medals[rank]}</span>
         </div>
@@ -98,6 +105,11 @@ export default function LessonFinish({ perfect, xpGained, wrongCount, mode, onSt
             <div>🔥 {state.streak}</div>
           </div>
         </div>
+        {showLevelUp && (
+          <div className="lvl" style={{ animationDelay: '0.2s', marginBottom: 14 }}>
+            🎖️ مستوى جديد! المستوى {levelFromXp(state.xp)}
+          </div>
+        )}
         {mode === 'test' && (
           <div className="lvl" style={{ animationDelay: '0.2s', marginBottom: 14 }}>
             🔓 اجتزت اختبار الوحدة! فُتحت الوحدة التالية (+20💎)

@@ -6,7 +6,7 @@ import { shuffle } from '@/utils/shuffle';
 import { buildQuestions, type Question } from '@/utils/questionBuilder';
 import { sfx } from '@/utils/audio';
 import { speak } from '@/utils/speech';
-import { confetti } from '@/utils/effects';
+import { confetti, burst, flashScreen, popText } from '@/utils/effects';
 import { toast } from '@/utils/toast';
 import Modal from '@/components/Modal';
 
@@ -25,14 +25,16 @@ interface LessonPlayerProps {
   lessonIndex: number;
   mode: LessonMode;
   unitIndex?: number;
+  practiceMistakesOnly?: boolean;
   onExit: () => void;
-  onFinish: (perfect: boolean, xpGained: number) => void;
+  onFinish: (perfect: boolean, xpGained: number, wrong: number) => void;
   onFail: () => void;
 }
 
 const PRAISE = ['ممتاز! 🎉', 'رائع!', 'أحسنت!', 'إجابة صحيحة!'];
+const COMBO_PRAISE = ['ممتاز!', 'رائع!', 'مذهل!', 'لا يُصدَّق!', 'أسطوري!', 'خارق!'];
 
-export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onFinish, onFail }: LessonPlayerProps) {
+export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMistakesOnly, onExit, onFinish, onFail }: LessonPlayerProps) {
   const { state, setState } = useProgress();
   const [questions, setQuestions] = useState<Question[]>([]);
   const [qIndex, setQIndex] = useState(0);
@@ -49,8 +51,10 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
   const [mtMatched, setMtMatched] = useState(0);
   const [showGrammar, setShowGrammar] = useState(false);
   const [showOutModal, setShowOutModal] = useState(false);
+  const comboRef = useRef(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const initialized = useRef(false);
+  const initialHeartsRef = useRef(hearts);
 
   const q = questions[qIndex];
   const total = questions.length;
@@ -71,7 +75,18 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
         const p = pathOf(i);
         return (state.pg[p] | 0) > i - PATH_STARTS[p];
       });
-      words = shuffle(doneLessons.flatMap((l) => l.words)).slice(0, 5);
+      if (practiceMistakesOnly) {
+        const mistakeWords = (state.mw || [])
+          .map((e) => ALL_WORDS.find((w) => w.en === e))
+          .filter(Boolean) as Word[];
+        if (mistakeWords.length >= 5) {
+          words = shuffle(mistakeWords).slice(0, 5);
+        } else {
+          words = shuffle(doneLessons.flatMap((l) => l.words)).slice(0, 5);
+        }
+      } else {
+        words = shuffle(doneLessons.flatMap((l) => l.words)).slice(0, 5);
+      }
       sentences = shuffle(doneLessons.flatMap((l) => l.sentences)).slice(0, 2);
       pool = ALL_WORDS;
     } else if (mode === 'test' && unitIndex !== undefined) {
@@ -127,21 +142,30 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
 
   function res(ok: boolean, answer: string) {
     if (ok) {
-      sfx.ok(1);
-    } else {
-      sfx.bad();
-    }
-
-    if (ok) {
+      comboRef.current++;
+      sfx.ok(comboRef.current);
       setDone((d) => d + 1);
-      // Track mistaken word removal
       if (q && q.c) {
         setState((prev) => ({
           ...prev,
           mw: (prev.mw || []).filter((e) => e !== q.c!.en),
         }));
       }
+
+      const W = window.innerWidth;
+      const H = window.innerHeight;
+      burst(comboRef.current >= 5 ? 44 : 24, W / 2, H - 120, { ang: -1.57, spread: 2.6, pow: 9 + Math.min(comboRef.current, 8) });
+      if (bodyRef.current) bodyRef.current.classList.add('thud');
+      if (comboRef.current >= 2) popText(`🔥 ×${comboRef.current} متتالية!`);
+      sfx.vibrateOk(comboRef.current);
     } else {
+      comboRef.current = 0;
+      sfx.bad();
+      flashScreen('rgba(255,75,75,.5)');
+      if (bodyRef.current) bodyRef.current.classList.add('heavy');
+      burst(10, 0, 0, { sad: true });
+      popText('💔 -1');
+      sfx.vibrateBad();
       setWrong((w) => w + 1);
       if (mode !== 'lesson') {
         setHearts((h) => h - 1);
@@ -153,13 +177,12 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
           return { ...prev, mw: mw.slice(-30) };
         });
       }
-      // Re-add question
       setQuestions((qs) => [...qs, q]);
     }
 
     setResult({ ok, answer });
 
-    if (mode !== 'lesson' && ok === false && hearts - 1 <= 0) {
+    if (mode !== 'lesson' && !ok && hearts - 1 <= 0) {
       setTimeout(() => {
         if (mode === 'test') {
           onFail();
@@ -180,6 +203,10 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
     setMtSel(null);
     setMtMatched(0);
     setShowGrammar(false);
+    if (bodyRef.current) {
+      bodyRef.current.classList.remove('thud');
+      bodyRef.current.classList.remove('heavy');
+    }
     setQIndex((i) => i + 1);
 
     if (qIndex + 1 >= total) {
@@ -216,7 +243,9 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
         next.pg[p] = Math.max(next.pg[p] | 0, unitEndLesson(unitIndex) - PATH_STARTS[p]);
         next.gems += 20;
       }
-      // Streak
+      if (mode === 'practice' && state.bx) {
+        next.bx = 0;
+      }
       const t = new Date().toDateString();
       const y = new Date(Date.now() - 864e5).toDateString();
       if (next.last !== t) {
@@ -232,7 +261,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
 
     confetti();
     sfx.ok(1);
-    onFinish(perfect, xp);
+    onFinish(perfect, xp, wrong);
   }
 
   function handleSpeech() {
@@ -259,11 +288,18 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
     r.start();
   }
 
+  function skipQuestion() {
+    setDone((d) => d + 1);
+    setQIndex((i) => i + 1);
+    if (qIndex + 1 >= total) finishLesson();
+  }
+
   if (!q) {
     return null;
   }
 
   const progress = total > 0 ? (done / total) * 100 : 0;
+  const comboPraise = COMBO_PRAISE[Math.min(comboRef.current, 6) - 1] || PRAISE[0];
 
   return (
     <>
@@ -292,7 +328,9 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
           <>
             <b>
               {result.ok
-                ? shuffle(PRAISE)[0]
+                ? comboRef.current >= 2
+                  ? <>🦉 {comboPraise}</>
+                  : shuffle(PRAISE)[0]
                 : <>الإجابة الصحيحة:<br /><span dir="ltr" style={{ fontWeight: 600 }}>{result.answer}</span></>}
             </b>
             <button className="btn" onClick={continueNext}>متابعة</button>
@@ -301,7 +339,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
           <button
             className="btn"
             style={{ background: 'var(--bd)', color: 'var(--tx)', boxShadow: '0 5px 0 var(--mut)' }}
-            onClick={() => { setDone((d) => d + 1); setQIndex((i) => i + 1); if (qIndex + 1 >= total) finishLesson(); }}
+            onClick={skipQuestion}
           >
             تخطي
           </button>
@@ -329,7 +367,11 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
           }}>
             💎 املأ القلوب (50 جوهرة)
           </button>
-          <button className="btn" onClick={() => { setShowOutModal(false); onExit(); }}>
+          <button className="btn" onClick={() => {
+            setState((prev) => ({ ...prev, lock: Date.now() + 3600000 }));
+            setShowOutModal(false);
+            onExit();
+          }}>
             العودة للرئيسية
           </button>
         </Modal>
@@ -387,6 +429,9 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
               </button>
             ))}
           </div>
+          {q.y === 'ls' && (
+            <button className="lnk" onClick={skipQuestion}>🔇 لا أستطيع الاستماع الآن</button>
+          )}
         </>
       );
     }
@@ -513,6 +558,9 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
               value={inputVal}
               onChange={(e) => setInputVal(e.target.value)}
             />
+          )}
+          {q.y === 'lf' && (
+            <button className="lnk" onClick={skipQuestion}>🔇 لا أستطيع الاستماع الآن</button>
           )}
         </>
       );
@@ -642,9 +690,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, onExit, onF
               </button>
             ))}
           </div>
-          <button className="lnk" onClick={() => { setDone((d) => d + 1); setQIndex((i) => i + 1); if (qIndex + 1 >= total) finishLesson(); }}>
-            🔇 لا أستطيع الاستماع الآن
-          </button>
+          <button className="lnk" onClick={skipQuestion}>🔇 لا أستطيع الاستماع الآن</button>
         </>
       );
     }

@@ -20,9 +20,9 @@ import Practice from '@/components/Practice';
 import StudyCards from '@/components/StudyCards';
 import LessonPlayer from '@/components/LessonPlayer';
 import LessonFinish from '@/components/LessonFinish';
-import { PATH_NAMES, PATH_COUNTS, pathOf, PATH_STARTS, unitStartLesson } from '@/content/catalog';
+import { PATH_NAMES, PATH_COUNTS, PATH_STARTS, pathOf, unitStartLesson } from '@/content/catalog';
 
-type Screen = 'main' | 'lesson' | 'finish' | 'study' | 'settings' | 'paths' | 'unittest';
+type Screen = 'main' | 'lesson' | 'finish' | 'study' | 'settings' | 'paths';
 
 function AppInner() {
   const { state, username, logout } = useProgress();
@@ -31,33 +31,17 @@ function AppInner() {
   const [lessonIndex, setLessonIndex] = useState(0);
   const [lessonMode, setLessonMode] = useState<LessonMode>('lesson');
   const [unitIndex, setUnitIndex] = useState<number | undefined>(undefined);
+  const [practiceMistakesOnly, setPracticeMistakesOnly] = useState(false);
   const [finishData, setFinishData] = useState({ perfect: false, xp: 0, wrong: 0 });
   const [showUnitTestModal, setShowUnitTestModal] = useState<number | null>(null);
 
-  // Apply theme + daily reset on mount and when state changes
   useEffect(() => {
     applyTheme(state.settings.th);
-    const t = new Date().toDateString();
-    if (state.dd !== t) {
-      // daily reset handled in state — just trigger re-render
-    }
   }, [state.settings.th]);
 
-  // Set up FX enabled checker
   useEffect(() => {
     setFxEnabled(() => state.settings.fx === 1);
   }, [state.settings.fx]);
-
-  // Heart regen
-  useEffect(() => {
-    if (state.hearts < 5 && !state.lock) {
-      const elapsed = Date.now() - (state.ht || Date.now());
-      if (elapsed >= 300000) {
-        // 5 minutes
-        // handled by periodic check
-      }
-    }
-  }, []);
 
   useEffect(() => {
     document.addEventListener('click', initAudioOnFirstClick, { once: true });
@@ -88,9 +72,9 @@ function AppInner() {
   const startPractice = (mistakesOnly: boolean) => {
     setLessonMode('practice');
     setUnitIndex(undefined);
-    // Use a done lesson's index for content base
-    const doneLessons = [];
-    for (let i = 0; i < 52; i++) {
+    setPracticeMistakesOnly(mistakesOnly);
+    const doneLessons: number[] = [];
+    for (let i = 0; i < ALL_LESSONS_COUNT; i++) {
       const p = pathOf(i);
       if ((state.pg[p] | 0) > i - PATH_STARTS[p]) doneLessons.push(i);
     }
@@ -107,8 +91,8 @@ function AppInner() {
     setScreen('lesson');
   };
 
-  const handleLessonFinish = (perfect: boolean, xp: number) => {
-    setFinishData({ perfect, xp, wrong: 0 });
+  const handleLessonFinish = (perfect: boolean, xp: number, wrong: number) => {
+    setFinishData({ perfect, xp, wrong });
     setScreen('finish');
   };
 
@@ -124,6 +108,7 @@ function AppInner() {
           lessonIndex={lessonIndex}
           mode={lessonMode}
           unitIndex={unitIndex}
+          practiceMistakesOnly={practiceMistakesOnly}
           onExit={goHome}
           onFinish={handleLessonFinish}
           onFail={handleLessonFail}
@@ -196,7 +181,6 @@ function AppInner() {
     );
   }
 
-  // Main screen
   return (
     <div className="lingo-app">
       <Header />
@@ -238,6 +222,8 @@ function AppInner() {
     </div>
   );
 }
+
+const ALL_LESSONS_COUNT = 62;
 
 export default function App() {
   return (
