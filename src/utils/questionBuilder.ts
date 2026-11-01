@@ -162,7 +162,3 @@ export function buildQuestions(
   const sp = qs.filter((x) => x.y === 'sp');
   return [...shuffle(nonSp).slice(0, 16), ...sp];
 }
-
-// helper to get all Arabic sentences for the listen-translate question
-import { ALL_LESSONS } from '@/content/catalog';
-const ALL_LESSONS_SENTENCES_AR = ALL_LESSONS.flatMap((l) => l.sentences.map((s) => s.ar));

@@ -9,6 +9,14 @@ export default function ToastHost() {
       setMessage(msg);
       setTimeout(() => setMessage(''), 3000);
     });
+
+    const onCustom = (e: Event) => {
+      const detail = (e as CustomEvent<string>).detail;
+      setMessage(detail);
+      setTimeout(() => setMessage(''), 3000);
+    };
+    window.addEventListener('lg-toast', onCustom);
+    return () => window.removeEventListener('lg-toast', onCustom);
   }, []);
 
   if (!message) return null;
