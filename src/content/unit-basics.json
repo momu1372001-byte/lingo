@@ -1,0 +1,222 @@
+{
+  "units": [
+    {
+      "title": "أساسيات المحادثة",
+      "color": "#58cc02",
+      "lessons": [
+        {
+          "name": "التحيات",
+          "emoji": "👋",
+          "words": [
+            ["Hello", "مرحبا", "👋"],
+            ["Goodbye", "مع السلامة", "🚪"],
+            ["Thanks", "شكرا", "🙏"],
+            ["Please", "من فضلك", "🤲"],
+            ["Sorry", "آسف", "😔"]
+          ],
+          "sentences": [
+            ["Hello my friend", "مرحبا يا صديقي"],
+            ["Thanks a lot", "شكرا جزيلا"]
+          ],
+          "grammarNotes": [
+            "a / an: نستخدم a قبل الصوت الساكن (a cat) و an قبل الصوت المتحرك (an apple). فعل الكينونة: I am – You are – He/She/It is.",
+            "Hello و Goodbye و Thanks كلمات ترحيب وشكر تُستخدم بمفردها أو ضمن جملة. Hi = Hello (غير رسمية).",
+            "Please تأتي في بداية أو نهاية الطلب المهذب: Please sit down / Sit down, please."
+          ]
+        },
+        {
+          "name": "العائلة",
+          "emoji": "👨‍👩‍👧",
+          "words": [
+            ["Mother", "أم", "👩"],
+            ["Father", "أب", "👨"],
+            ["Brother", "أخ", "👦"],
+            ["Sister", "أخت", "👧"],
+            ["Friend", "صديق", "🧑‍🤝‍🧑"]
+          ],
+          "sentences": [
+            ["I love my mother", "أنا أحب أمي"],
+            ["He is my brother", "هو أخي"]
+          ],
+          "grammarNotes": [
+            "الصفة تأتي قبل الاسم: a red car (وليس a car red). وبعد الأرقام الأكبر من واحد يأخذ الاسم s: two cats.",
+            "ضمائر الملكية: my (خاصتي/خاص بي), your (خاص بك), his (خاص به), her (خاص بها). مثال: my mother, his brother.",
+            "نستخدم is مع المفرد (he/she/it) و are مع الجمع (we/they/you)."
+          ]
+        },
+        {
+          "name": "الطعام",
+          "emoji": "🍎",
+          "words": [
+            ["Water", "ماء", "💧"],
+            ["Bread", "خبز", "🍞"],
+            ["Apple", "تفاحة", "🍎"],
+            ["Milk", "حليب", "🥛"],
+            ["Rice", "أرز", "🍚"]
+          ],
+          "sentences": [
+            ["I drink water", "أنا أشرب الماء"],
+            ["She eats an apple", "هي تأكل تفاحة"]
+          ],
+          "grammarNotes": [
+            "a / an: نستخدم a قبل الصوت الساكن (a cat) و an قبل الصوت المتحرك (an apple). فعل الكينونة: I am – You are – He/She/It is.",
+            "I drink / She drinks: مع He/She/It نضيف s للفعل في المضارع البسيط.",
+            "an apple (لأن A حرف متحرك) لكن a banana (لأن B حرف ساكن)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "العالم من حولك",
+      "color": "#1cb0f6",
+      "lessons": [
+        {
+          "name": "الحيوانات",
+          "emoji": "🐱",
+          "words": [
+            ["Cat", "قطة", "🐱"],
+            ["Dog", "كلب", "🐶"],
+            ["Bird", "طائر", "🐦"],
+            ["Fish", "سمكة", "🐟"],
+            ["Horse", "حصان", "🐴"]
+          ],
+          "sentences": [
+            ["The cat is small", "القطة صغيرة"],
+            ["I have a dog", "لدي كلب"]
+          ],
+          "grammarNotes": [
+            "The = ال التعريف. نستخدمها للحديث عن شيء معيّن: The cat is small (القطة المعروفة). أما a cat فتعني أي قطة.",
+            "I have = لدي / عندي. نستخدم have مع I/you/we/they و has مع he/she/it: She has a dog.",
+            "جمع الأسماء: cat → cats, dog → dogs, bird → birds (نضيف s للجمع)."
+          ]
+        },
+        {
+          "name": "الألوان",
+          "emoji": "🎨",
+          "words": [
+            ["Red", "أحمر", "🔴"],
+            ["Blue", "أزرق", "🔵"],
+            ["Green", "أخضر", "🟢"],
+            ["Yellow", "أصفر", "🟡"],
+            ["Black", "أسود", "⚫"]
+          ],
+          "sentences": [
+            ["The sky is blue", "السماء زرقاء"],
+            ["I like red", "أنا أحب الأحمر"]
+          ],
+          "grammarNotes": [
+            "الصفة تأتي قبل الاسم: a red car (وليس a car red). وبعد الأرقام الأكبر من واحد يأخذ الاسم s: two cats.",
+            "The sky is blue = السماء زرقاء. نستخدم is لوصف شيء مفرد. الصفة لا تتغير (لا تُذكر): blue sky / blue skies.",
+            "I like + اسم أو لون: I like red / I like red cars. لا نستخدم the قبل اللون في هذا السياق."
+          ]
+        },
+        {
+          "name": "الأرقام",
+          "emoji": "🔢",
+          "words": [
+            ["One", "واحد", "1️⃣"],
+            ["Two", "اثنان", "2️⃣"],
+            ["Three", "ثلاثة", "3️⃣"],
+            ["Four", "أربعة", "4️⃣"],
+            ["Five", "خمسة", "5️⃣"]
+          ],
+          "sentences": [
+            ["I have two books", "لدي كتابان"],
+            ["Three apples please", "ثلاث تفاحات من فضلك"]
+          ],
+          "grammarNotes": [
+            "بعد الأرقام الأكبر من واحد يأخذ الاسم صيغة الجمع (s): one book / two books, one apple / three apples.",
+            "Three apples please = ثلاث تفاحات من فضلك. نستخدم العدد قبل الاسم مباشرة: three apples.",
+            "أعداد 1-5 هي الأساس: one, two, three, four, five. ثم: six, seven, eight, nine, ten."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "الحياة اليومية",
+      "color": "#ce82ff",
+      "lessons": [
+        {
+          "name": "المنزل",
+          "emoji": "🏠",
+          "words": [
+            ["House", "منزل", "🏠"],
+            ["Door", "باب", "🚪"],
+            ["Table", "طاولة", "🪑"],
+            ["Bed", "سرير", "🛏️"],
+            ["Window", "نافذة", "🪟"]
+          ],
+          "sentences": [
+            ["Open the door", "افتح الباب"],
+            ["The house is big", "المنزل كبير"]
+          ],
+          "grammarNotes": [
+            "الأمر (Imperative): نستخدم الفعل بدون فاعل: Open the door / Close the window / Sit down.",
+            "The house is big: نستخدم is مع المفرد لوصف الحجم. الصفة big لا تتغير مع المذكر/المؤنث.",
+            "in / on / at: in the house (داخل), on the table (فوق), at the door (عند)."
+          ]
+        },
+        {
+          "name": "الأفعال",
+          "emoji": "🏃",
+          "words": [
+            ["Run", "يركض", "🏃"],
+            ["Read", "يقرأ", "📖"],
+            ["Sleep", "ينام", "😴"],
+            ["Write", "يكتب", "✍️"],
+            ["Play", "يلعب", "⚽"]
+          ],
+          "sentences": [
+            ["I read a book", "أنا أقرأ كتابا"],
+            ["They play football", "هم يلعبون كرة القدم"]
+          ],
+          "grammarNotes": [
+            "المضارع البسيط: I read / he reads (نضيف s مع he/she/it). النفي: I do not read / he does not read.",
+            "They play football: نستخدم play + رياضة بدون the: play football / play tennis. لكن the piano (بـ the للأدوات).",
+            "I read a book: a/an قبل الاسم المفرد النكرة. والكتابات: read a book, write a letter."
+          ]
+        },
+        {
+          "name": "الوقت",
+          "emoji": "⏰",
+          "words": [
+            ["Today", "اليوم", "📅"],
+            ["Tomorrow", "غدا", "🌅"],
+            ["Night", "ليل", "🌙"],
+            ["Morning", "صباح", "☀️"],
+            ["Week", "أسبوع", "🗓️"]
+          ],
+          "sentences": [
+            ["See you tomorrow", "أراك غدا"],
+            ["Good morning", "صباح الخير"]
+          ],
+          "grammarNotes": [
+            "كلمات الزمن: today (اليوم), tomorrow (غدا), yesterday (أمس). morning (صباح), night (ليل).",
+            "Good morning = صباح الخير, Good night = تصبح على خير. Good + فترة زمنية للتحية.",
+            "See you tomorrow = أراك غدا. الترتيب: فعل + ضمير + ظرف زمن."
+          ]
+        }
+      ]
+    }
+  ],
+  "fillBlanks": [
+    {"template": "Good ___ teacher", "answer": "morning", "distractors": ["bad", "fine"], "ar": "صباح الخير يا معلم"},
+    {"template": "Nice to ___ you", "answer": "meet", "distractors": ["eat", "see"], "ar": "سررت بلقائك"},
+    {"template": "My mother ___ a teacher", "answer": "is", "distractors": ["am", "are"], "ar": "أمي معلمة"},
+    {"template": "I have two ___", "answer": "sisters", "distractors": ["sister", "brother"], "ar": "لدي أختان"},
+    {"template": "I ___ bread every day", "answer": "eat", "distractors": ["drink", "read"], "ar": "آكل الخبز كل يوم"},
+    {"template": "She ___ milk", "answer": "drinks", "distractors": ["drink", "eat"], "ar": "هي تشرب الحليب"},
+    {"template": "The bird can ___", "answer": "fly", "distractors": ["run", "eat"], "ar": "الطائر يستطيع الطيران"},
+    {"template": "Dogs ___ big", "answer": "are", "distractors": ["is", "am"], "ar": "الكلاب كبيرة"},
+    {"template": "The grass is ___", "answer": "green", "distractors": ["red", "blue"], "ar": "العشب أخضر"},
+    {"template": "Bananas are ___", "answer": "yellow", "distractors": ["black", "blue"], "ar": "الموز أصفر"},
+    {"template": "I have ___ hands", "answer": "two", "distractors": ["one", "five"], "ar": "لدي يدان"},
+    {"template": "One plus one is ___", "answer": "two", "distractors": ["four", "three"], "ar": "واحد زائد واحد يساوي اثنان"},
+    {"template": "I sleep in the ___", "answer": "bed", "distractors": ["door", "table"], "ar": "أنام على السرير"},
+    {"template": "Close the ___", "answer": "window", "distractors": ["water", "milk"], "ar": "أغلق النافذة"},
+    {"template": "He ___ every morning", "answer": "runs", "distractors": ["run", "running"], "ar": "هو يركض كل صباح"},
+    {"template": "They ___ English", "answer": "read", "distractors": ["reads", "sleep"], "ar": "هم يقرؤون الإنجليزية"},
+    {"template": "I wake up in the ___", "answer": "morning", "distractors": ["night", "week"], "ar": "أستيقظ في الصباح"},
+    {"template": "The moon comes out at ___", "answer": "night", "distractors": ["morning", "today"], "ar": "يظهر القمر في الليل"}
+  ]
+}

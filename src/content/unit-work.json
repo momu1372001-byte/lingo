@@ -1,0 +1,416 @@
+{
+  "units": [
+    {
+      "title": "عالم العمل",
+      "color": "#2b70c9",
+      "lessons": [
+        {
+          "name": "المكتب",
+          "emoji": "🏢",
+          "words": [
+            ["Office", "مكتب", "🏢"],
+            ["Meeting", "اجتماع", "🤝"],
+            ["Manager", "مدير", "👔"],
+            ["Email", "بريد إلكتروني", "📧"],
+            ["Desk", "مكتب كتابة", "🗄️"]
+          ],
+          "sentences": [
+            ["The meeting starts now", "الاجتماع يبدأ الآن"],
+            ["I check my email", "أتحقق من بريدي"]
+          ],
+          "grammarNotes": [
+            "للطلب المهذب في العمل: Could you ... please? وللتعبير بأدب عن رغبتك: I would like ...",
+            "starts = يبدأ (مضارع بسيط مع he/she/it نضيف s). The meeting starts (الاجتماع مفرد غائب).",
+            "my email = بريدي. check + مفعول: check email, check the time, check the message."
+          ]
+        },
+        {
+          "name": "الوظيفة",
+          "emoji": "💼",
+          "words": [
+            ["Job", "وظيفة", "💼"],
+            ["Salary", "راتب", "💰"],
+            ["Boss", "رئيس", "🧑‍💼"],
+            ["Skill", "مهارة", "🛠️"],
+            ["Interview", "مقابلة", "🎙️"]
+          ],
+          "sentences": [
+            ["I need a job", "أحتاج وظيفة"],
+            ["She has many skills", "لديها مهارات كثيرة"]
+          ],
+          "grammarNotes": [
+            "I need a job = أحتاج وظيفة. need + اسم نكرة: a job, a new job.",
+            "many + جمع: many skills, many jobs. نستخدم many مع الجمع و much مع غير المعدود.",
+            "has / have: she has (مفرد غائب), I have, they have. القاعدة ثابتة مع الملكية والأعراض."
+          ]
+        },
+        {
+          "name": "المال",
+          "emoji": "💳",
+          "words": [
+            ["Card", "بطاقة", "💳"],
+            ["Coin", "عملة", "🪙"],
+            ["Save", "يدخر", "🐷"],
+            ["Pay", "يدفع", "💸"],
+            ["Budget", "ميزانية", "📊"]
+          ],
+          "sentences": [
+            ["I pay by card", "أدفع بالبطاقة"],
+            ["We save money", "ندخر المال"]
+          ],
+          "grammarNotes": [
+            "by card = بالبطاقة. by + وسيلة الدفع: by card, by cash. لا نستخدم the بعد by.",
+            "pay / save: pay (يدفع), save (يدخر). أضداد: spend (ينفق) مقابل save (يدخر).",
+            "money = مال (غير معدود). نستخدم much money (وليس many money). a lot of money."
+          ]
+        },
+        {
+          "name": "الهاتف",
+          "emoji": "📞",
+          "words": [
+            ["Call", "مكالمة", "📞"],
+            ["Number", "رقم", "🔢"],
+            ["Answer", "يجيب", "📲"],
+            ["Line", "خط", "☎️"],
+            ["Voice", "صوت", "🗣️"]
+          ],
+          "sentences": [
+            ["Please call me", "من فضلك اتصل بي"],
+            ["I did not hear you", "لم أسمعك"]
+          ],
+          "grammarNotes": [
+            "call me = اتصل بي. call + ضمير مفعول: call me, call him, call her.",
+            "did not = لم (نفي الماضي). I did not hear you = لم أسمعك. did + not + فعل مصدر.",
+            "Please = من فضل. تأتي في بداية أو نهاية الجملة المهذبة: Please call me / Call me, please."
+          ]
+        },
+        {
+          "name": "الأفكار",
+          "emoji": "💡",
+          "words": [
+            ["Idea", "فكرة", "💡"],
+            ["Plan", "خطة", "📆"],
+            ["Goal", "هدف", "🎯"],
+            ["Project", "مشروع", "📁"],
+            ["Result", "نتيجة", "✅"]
+          ],
+          "sentences": [
+            ["This is a good idea", "هذه فكرة جيدة"],
+            ["We have a plan", "لدينا خطة"]
+          ],
+          "grammarNotes": [
+            "This is = هذه (للمفرد). These are = هؤلاء (للجمع). This is a good idea, these are good ideas.",
+            "a good idea = فكرة جيدة. الصفة قبل الاسم: good idea, new plan, big project.",
+            "have / has: we have, he has. نستخدم have للملكية والإمتلاك."
+          ]
+        },
+        {
+          "name": "البريد",
+          "emoji": "📦",
+          "words": [
+            ["Letter", "خطاب", "💌"],
+            ["Address", "عنوان", "📬"],
+            ["Stamp", "طابع", "📮"],
+            ["Package", "طرد", "📦"],
+            ["Delivery", "توصيل", "🚚"]
+          ],
+          "sentences": [
+            ["I received a package", "استلمت طردا"],
+            ["The delivery is late", "التوصيل متأخر"]
+          ],
+          "grammarNotes": [
+            "received = استلم (ماضي بسيط). نضيف ed للأفعال المنتظمة: receive → received.",
+            "is late = متأخر. نستخدم is + صفة لوصف الحالة: is late, is early, is on time.",
+            "a package = طرد (نكرة). the package = الطرد (معرفة). a/an vs the."
+          ]
+        },
+        {
+          "name": "السياحة",
+          "emoji": "🗺️",
+          "words": [
+            ["Map", "خريطة", "🗺️"],
+            ["Tourist", "سائح", "🤳"],
+            ["Visa", "تأشيرة", "🛃"],
+            ["Guide", "دليل", "🧑‍🏫"],
+            ["Beach", "شاطئ", "🏖️"]
+          ],
+          "sentences": [
+            ["I need a map", "أحتاج خريطة"],
+            ["The guide is friendly", "الدليل ودود"]
+          ],
+          "grammarNotes": [
+            "friendly = ودود. صفة مشتقة من friend + ly.类似的: quickly, slowly.",
+            "need a map = أحتاج خريطة. need + اسم نكرة: a map, a guide, a visa.",
+            "The guide = الدليل (معرفة). is friendly (صفة بعد is لوصف الشخص)."
+          ]
+        },
+        {
+          "name": "المطعم",
+          "emoji": "🍽️",
+          "words": [
+            ["Menu", "قائمة", "📜"],
+            ["Waiter", "نادل", "🤵"],
+            ["Bill", "فاتورة", "🧾"],
+            ["Soup", "شوربة", "🍲"],
+            ["Dessert", "حلوى", "🍰"]
+          ],
+          "sentences": [
+            ["The soup is hot", "الشوربة ساخنة"],
+            ["Bring the bill please", "أحضر الفاتورة من فضلك"]
+          ],
+          "grammarNotes": [
+            "Bring / Take: bring (أحضر إلى هنا), take (خذ إلى هناك). Bring the bill = أحضر الفاتورة.",
+            "The soup is hot = الشوربة ساخنة. is + صفة لوصف الطعام: hot, cold, delicious, spicy.",
+            "please = من فضلك. تأتي في نهاية الطلب: Bring the bill please."
+          ]
+        },
+        {
+          "name": "الأسئلة",
+          "emoji": "❓",
+          "words": [
+            ["Who", "من", "🙋"],
+            ["What", "ماذا", "❔"],
+            ["Where", "أين", "🔍"],
+            ["When", "متى", "⏰"],
+            ["Why", "لماذا", "🧐"]
+          ],
+          "sentences": [
+            ["Where is the bank", "أين البنك"],
+            ["What is your name", "ما اسمك"]
+          ],
+          "grammarNotes": [
+            "أسئلة Yes/No تبدأ بـ Do / Does / Is / Are / Can: Are you free today? والأمر بدون فاعل: Please wait here.",
+            "كلمات السؤال (Wh-): Who (من), What (ماذا), Where (أين), When (متى), Why (لماذا), How (كيف).",
+            "Where is the bank = أين البنك. Where + is + اسم. What is your name = ما اسمك."
+          ]
+        },
+        {
+          "name": "التعارف",
+          "emoji": "👋",
+          "words": [
+            ["Name", "اسم", "📛"],
+            ["Age", "عمر", "🕰️"],
+            ["Country", "بلد", "🏳️"],
+            ["City", "مدينة", "🏙️"],
+            ["Language", "لغة", "🗣️"]
+          ],
+          "sentences": [
+            ["My name is Sara", "اسمي سارة"],
+            ["I live in a big city", "أعيش في مدينة كبيرة"]
+          ],
+          "grammarNotes": [
+            "My name is = اسمي. ضمير الملكية my + اسم + is: My name is, My city is, My age is.",
+            "I live in = أعيش في. live in + مكان: live in a city, live in Egypt, live in Cairo.",
+            "a big city = مدينة كبيرة. الصفة before الاسم: a big city, a small country, a new language."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "الدراسة والعلوم",
+      "color": "#ce82ff",
+      "lessons": [
+        {
+          "name": "الجامعة",
+          "emoji": "🎓",
+          "words": [
+            ["University", "جامعة", "🎓"],
+            ["Exam", "امتحان", "📑"],
+            ["Degree", "شهادة", "🏅"],
+            ["Library", "مكتبة", "📚"],
+            ["Professor", "أستاذ", "👨‍🏫"]
+          ],
+          "sentences": [
+            ["The exam is hard", "الامتحان صعب"],
+            ["I study at the library", "أدرس في المكتبة"]
+          ],
+          "grammarNotes": [
+            "hard / easy = صعب / سهل. The exam is hard, the lesson is easy. صفات لوصف الصعوبة.",
+            "study at = أدرس في. at + مكان: at the library, at the university, at school.",
+            "The exam = الامتحان (معرفة). is hard (صفة بعد is لوصف الامتحان)."
+          ]
+        },
+        {
+          "name": "العلوم",
+          "emoji": "🔬",
+          "words": [
+            ["Science", "علم", "🔬"],
+            ["Energy", "طاقة", "🔋"],
+            ["Planet", "كوكب", "🪐"],
+            ["Space", "فضاء", "🚀"],
+            ["Moon", "قمر", "🌕"]
+          ],
+          "sentences": [
+            ["The earth is a planet", "الأرض كوكب"],
+            ["The moon is bright", "القمر مضيء"]
+          ],
+          "grammarNotes": [
+            "a planet = كوكب (نكرة). The earth = الأرض (معرفة، اسم كوكب محدد). a vs the.",
+            "is bright = مضيء. is + صفة: bright (مضيء), dark (مظلم), hot (حار), cold (بارد).",
+            "أسماء الكواكب بـ the: the earth, the moon, the sun. لكن Mars, Jupiter (بدون the)."
+          ]
+        },
+        {
+          "name": "الرياضيات",
+          "emoji": "➕",
+          "words": [
+            ["Add", "يجمع", "➕"],
+            ["Subtract", "يطرح", "➖"],
+            ["Half", "نصف", "🌗"],
+            ["Count", "يعد", "🧮"],
+            ["Zero", "صفر", "0️⃣"]
+          ],
+          "sentences": [
+            ["Count to ten", "عد حتى عشرة"],
+            ["Two plus two is four", "اثنان زائد اثنين يساوي اثنان"]
+          ],
+          "grammarNotes": [
+            "plus / minus: Two plus two = 2+2, Five minus three = 5-3. equals / is = يساوي.",
+            "Count to ten = عد حتى عشرة. الأمر + to + رقم: count to ten, count to five.",
+            "الأعداد الترتيبية: first (أول), second (ثاني), third (ثالث), fourth (رابع)."
+          ]
+        },
+        {
+          "name": "التاريخ",
+          "emoji": "🏛️",
+          "words": [
+            ["History", "تاريخ", "🏛️"],
+            ["King", "ملك", "🤴"],
+            ["War", "حرب", "⚔️"],
+            ["Peace", "سلام", "🕊️"],
+            ["Past", "ماضي", "⏳"]
+          ],
+          "sentences": [
+            ["History is interesting", "التاريخ ممتع"],
+            ["We want peace", "نريد السلام"]
+          ],
+          "grammarNotes": [
+            "interesting = ممتع. صفة مشتقة من interest + ing. مماثل: boring, exciting, tiring.",
+            "We want peace = نريد السلام. want + اسم: want peace, want help, want food.",
+            "War ↔ Peace: حرب ↔ سلام. أضداد. The past = الماضي، the present = الحاضر، the future = المستقبل."
+          ]
+        },
+        {
+          "name": "الجغرافيا",
+          "emoji": "🌏",
+          "words": [
+            ["Island", "جزيرة", "🏝️"],
+            ["Desert", "صحراء", "🏜️"],
+            ["Forest", "غابة", "🌿"],
+            ["Ocean", "محيط", "🐋"],
+            ["Continent", "قارة", "🌏"]
+          ],
+          "sentences": [
+            ["The desert is dry", "الصحراء جافة"],
+            ["The ocean is deep", "المحيط عميق"]
+          ],
+          "grammarNotes": [
+            "dry / wet = جاف / رطب. deep / shallow = عميق / ضحل. أضداد صفية مفيدة.",
+            "The desert = الصحراء (معرفة). is dry (صفة لوصف الحالة).",
+            "an island = جزيرة (an لأن i حرف متحرك). a desert, a forest, a continent."
+          ]
+        },
+        {
+          "name": "الفن",
+          "emoji": "🎭",
+          "words": [
+            ["Art", "فن", "🖼️"],
+            ["Painter", "رسام", "🧑‍🎨"],
+            ["Poem", "قصيدة", "🪶"],
+            ["Theater", "مسرح", "🎭"],
+            ["Song", "أغنية", "🎶"]
+          ],
+          "sentences": [
+            ["I love art", "أحب الفن"],
+            ["She sings a song", "هي تغني أغنية"]
+          ],
+          "grammarNotes": [
+            "I love art = أحب الفن. love + اسم. art (فن) اسم غير معدود، لا نستخدم a art.",
+            "sings = تغني (مضارع بسيط مع she/he/it نضيف s). sing → sings, paint → paints.",
+            "a song = أغنية (مفرد نكرة). a poem, a song, a painting. the song (معرفة)."
+          ]
+        },
+        {
+          "name": "القراءة",
+          "emoji": "📕",
+          "words": [
+            ["Story", "قصة", "📕"],
+            ["Page", "صفحة", "📄"],
+            ["Word", "كلمة", "🔤"],
+            ["Author", "كاتب", "✒️"],
+            ["Dictionary", "قاموس", "📔"]
+          ],
+          "sentences": [
+            ["I read a story", "أقرأ قصة"],
+            ["Open the dictionary", "افتح القاموس"]
+          ],
+          "grammarNotes": [
+            "Open = افتح (أمر). الأوامر: Open, Read, Write, Close. بدون فاعل.",
+            "a story = قصة (نكرة). the dictionary = القاموس (معرفة). a vs the.",
+            "read a story / read a book / read a page. read + مفعول: read a story, read a word."
+          ]
+        },
+        {
+          "name": "التسوق 2",
+          "emoji": "🏬",
+          "words": [
+            ["Discount", "خصم", "🔖"],
+            ["Size", "مقاس", "📐"],
+            ["Receipt", "إيصال", "🧾"],
+            ["Basket", "سلة", "🧺"],
+            ["Store", "متجر كبير", "🏬"]
+          ],
+          "sentences": [
+            ["I want a discount", "أريد خصما"],
+            ["This size is small", "هذا المقاس صغير"]
+          ],
+          "grammarNotes": [
+            "I want = أريد. want + اسم: want a discount, want a receipt. want to + فعل أيضا.",
+            "This size = هذا المقاس. This (للمفرد) + اسم. These sizes (للجمع).",
+            "is small = صغير. is + صفة لوصف المقاس: small, medium, large, extra large."
+          ]
+        },
+        {
+          "name": "الأعياد",
+          "emoji": "🎉",
+          "words": [
+            ["Birthday", "عيد ميلاد", "🎂"],
+            ["Gift", "هدية", "🎁"],
+            ["Party", "حفلة", "🎉"],
+            ["Wedding", "زفاف", "💒"],
+            ["Holiday", "إجازة", "🎄"]
+          ],
+          "sentences": [
+            ["Happy birthday to you", "عيد ميلاد سعيد لك"],
+            ["I buy a gift", "أشتري هدية"]
+          ],
+          "grammarNotes": [
+            "Happy + مناسبة: Happy birthday, Happy new year, Happy holiday. تحيات المناسبات.",
+            "I buy = أشتري (مضارع بسيط). buy + مفعول: buy a gift, buy a cake, buy flowers.",
+            "a gift = هدية (نكرة). a party, a wedding, a holiday (نستخدم a قبل المناسبات المفردة)."
+          ]
+        },
+        {
+          "name": "الرأي",
+          "emoji": "💬",
+          "words": [
+            ["Think", "يفكر", "🤔"],
+            ["Agree", "يوافق", "🙆"],
+            ["Like", "يحب", "❤️"],
+            ["Opinion", "رأي", "💬"],
+            ["Maybe", "ربما", "🤷"]
+          ],
+          "sentences": [
+            ["I think it is good", "أعتقد أنه جيد"],
+            ["Maybe we can go", "ربما نستطيع الذهاب"]
+          ],
+          "grammarNotes": [
+            "I think = أعتقد. نستخدم I think (that)... لإبداء الرأي: I think it is good, I think she is nice.",
+            "Maybe = ربما. تأتي في بداية الجملة: Maybe we can go, Maybe it will rain.",
+            "Agree / Disagree: أوافق / لا أوافق. I agree with you, I disagree with you."
+          ]
+        }
+      ]
+    }
+  ]
+}

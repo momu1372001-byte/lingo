@@ -1,0 +1,210 @@
+{
+  "units": [
+    {
+      "title": "المحادثة المتقدمة",
+      "color": "#ff4b4b",
+      "lessons": [
+        {
+          "name": "الترحيب",
+          "emoji": "🤝",
+          "words": [
+            ["Welcome", "أهلا بك", "🙌"],
+            ["Excuse", "المعذرة", "🙇"],
+            ["Pardon", "عفوا", "😅"],
+            ["Congratulations", "تهانينا", "🎊"],
+            ["Goodnight", "تصبح على خير", "🌃"]
+          ],
+          "sentences": [
+            ["Welcome to our home", "أهلا بك في بيتنا"],
+            ["Excuse me please", "المعذرة من فضلك"]
+          ],
+          "grammarNotes": [
+            "Welcome to = أهلا بك في. Welcome to + مكان: Welcome to our home, Welcome to Egypt.",
+            "Excuse me = المعذرة (لجذب الانتباه أو الاعتذار). نستخدمها قبل الطلب: Excuse me, can you help me?",
+            "Congratulations on + مناسبة: Congratulations on your birthday, Congratulations on your new job."
+          ]
+        },
+        {
+          "name": "المساعدة",
+          "emoji": "🆘",
+          "words": [
+            ["Help", "مساعدة", "🆘"],
+            ["Ask", "يسأل", "🙋‍♀️"],
+            ["Need", "يحتاج", "🧩"],
+            ["Give", "يعطي", "🫴"],
+            ["Wait", "ينتظر", "⏳"]
+          ],
+          "sentences": [
+            ["Can you help me", "هل تستطيع مساعدتي"],
+            ["Please wait here", "من فضلك انتظر هنا"]
+          ],
+          "grammarNotes": [
+            "Can you ...? = هل تستطيع...؟. صيغة طلب مهذبة: Can you help me? Can you wait here?",
+            "Please + أمر: Please wait here, Please help me. أو الأمر + please: Wait here, please.",
+            "help me / help him / help us. help + ضمير مفعول: me, him, her, us, them."
+          ]
+        },
+        {
+          "name": "الأرقام الكبيرة",
+          "emoji": "💯",
+          "words": [
+            ["Ten", "عشرة", "🔟"],
+            ["Hundred", "مئة", "💯"],
+            ["Thousand", "ألف", "🔣"],
+            ["Million", "مليون", "🤑"],
+            ["First", "أول", "🥇"]
+          ],
+          "sentences": [
+            ["I have ten books", "لدي عشرة كتب"],
+            ["He is the first winner", "هو الفائز الأول"]
+          ],
+          "grammarNotes": [
+            "الأعداد: ten (10), hundred (100), thousand (1000), million (1000000). أعداد كبيرة.",
+            "the first = الأول (ترتيبي). the first, the second, the third. نستخدم the قبل الترتيبي.",
+            "ten books = عشرة كتب. العدد + جمع: ten books, hundred books (لكن a hundred books)."
+          ]
+        },
+        {
+          "name": "الساعة",
+          "emoji": "🕐",
+          "words": [
+            ["Hour", "ساعة", "🕐"],
+            ["Minute", "دقيقة", "⏱️"],
+            ["Second", "ثانية", "⌛"],
+            ["Early", "مبكرا", "🌄"],
+            ["Late", "متأخرا", "🐌"]
+          ],
+          "sentences": [
+            ["I wake up early", "أستيقظ مبكرا"],
+            ["The bus is late", "الحافلة متأخرة"]
+          ],
+          "grammarNotes": [
+            "early / late = مبكرا / متأخرا. أضداد. I wake up early, the bus is late.",
+            "at + وقت: at seven, at eight o'clock. نستخدم at للساعات: at 7, at 8.",
+            "الترتيب: hour > minute > second. ساعة > دقيقة > ثانية."
+          ]
+        },
+        {
+          "name": "العائلة 2",
+          "emoji": "👪",
+          "words": [
+            ["Uncle", "عم", "👨‍🦳"],
+            ["Aunt", "عمة", "👩‍🦰"],
+            ["Cousin", "ابن العم", "🧒"],
+            ["Grandfather", "جد", "👴"],
+            ["Grandmother", "جدة", "👵"]
+          ],
+          "sentences": [
+            ["My uncle lives here", "عمي يعيش هنا"],
+            ["I visit my grandmother", "أزور جدتي"]
+          ],
+          "grammarNotes": [
+            "My uncle = عمي. صفات الملكية: my, your, his, her, our, their. قبل أفراد العائلة.",
+            "lives = يعيش (مضارع بسيط مع he/she/it نضيف s). live → lives, visit → visits.",
+            "visit + شخص: visit my grandmother, visit my uncle, visit my cousin."
+          ]
+        },
+        {
+          "name": "المنزل 2",
+          "emoji": "🏡",
+          "words": [
+            ["Kitchen", "مطبخ", "🍳"],
+            ["Bathroom", "حمام", "🛁"],
+            ["Garden", "حديقة المنزل", "🌷"],
+            ["Roof", "سطح", "🏘️"],
+            ["Floor", "أرضية", "🧱"]
+          ],
+          "sentences": [
+            ["The kitchen is clean", "المطبخ نظيف"],
+            ["We sit in the garden", "نجلس في الحديقة"]
+          ],
+          "grammarNotes": [
+            "in + غرفة: in the kitchen, in the bathroom, in the garden. حرف الجر in للمكان.",
+            "is clean = نظيف. is + صفة: clean, dirty, big, small. لوصف الغرف.",
+            "We sit = نجلس (مضارع بسيط). sit + مكان: sit in the garden, sit on the floor."
+          ]
+        },
+        {
+          "name": "الحيوانات البرية",
+          "emoji": "🦁",
+          "words": [
+            ["Lion", "أسد", "🦁"],
+            ["Elephant", "فيل", "🐘"],
+            ["Monkey", "قرد", "🐒"],
+            ["Snake", "ثعبان", "🐍"],
+            ["Bear", "دب", "🐻"]
+          ],
+          "sentences": [
+            ["The lion is strong", "الأسد قوي"],
+            ["Snakes are dangerous", "الثعابين خطيرة"]
+          ],
+          "grammarNotes": [
+            "strong / weak = قوي / ضعيف. The lion is strong, the rabbit is weak. صفات للوصف.",
+            "Snakes are dangerous: are مع الجمع. dangerous = خطيرة (صفة).",
+            "The lion = الأسد (مفرد معرف). Snakes = ثعابين (جمع نكرة). the vs no article."
+          ]
+        },
+        {
+          "name": "أفعال يومية",
+          "emoji": "🚶",
+          "words": [
+            ["Eat", "يأكل", "🍴"],
+            ["Drink", "يشرب", "🥤"],
+            ["Walk", "يمشي", "🚶"],
+            ["Wash", "يغسل", "🚿"],
+            ["Listen", "يستمع", "🎧"]
+          ],
+          "sentences": [
+            ["We eat together", "نأكل معا"],
+            ["I walk every day", "أمشي كل يوم"]
+          ],
+          "grammarNotes": [
+            "every day = كل يوم. every + اسم مفرد: every day, every morning, every week.",
+            "together = معا. ظرف يأتي في نهاية الجملة: We eat together, We walk together.",
+            "أفعال يومية: eat, drink, walk, wash, listen. مضارع بسيط: I eat, he eats (s مع الغائب)."
+          ]
+        },
+        {
+          "name": "المواعيد",
+          "emoji": "📌",
+          "words": [
+            ["Invite", "يدعو", "📩"],
+            ["Appointment", "موعد", "📌"],
+            ["Visit", "زيارة", "🛎️"],
+            ["Free", "متفرغ", "🆓"],
+            ["Busy", "مشغول", "🧑‍💻"]
+          ],
+          "sentences": [
+            ["Are you free today", "هل أنت متفرغ اليوم"],
+            ["I am busy tomorrow", "أنا مشغول غدا"]
+          ],
+          "grammarNotes": [
+            "Are you free? = هل أنت متفرغ؟ أسئلة Yes/No تبدأ بـ Are/Is/Do/Can.",
+            "Free ↔ Busy: متفرغ ↔ مشغول. أضداد. I am free, I am busy.",
+            "tomorrow = غدا. ظرف زمن: today, tomorrow, yesterday. يأتي في نهاية الجملة."
+          ]
+        },
+        {
+          "name": "مراجعة شاملة",
+          "emoji": "🏆",
+          "words": [
+            ["Learn", "يتعلم", "🧠"],
+            ["Speak", "يتحدث", "🗨️"],
+            ["Practice", "يتدرب", "🔁"],
+            ["Easy", "سهل", "😎"],
+            ["Difficult", "صعب", "😰"]
+          ],
+          "sentences": [
+            ["I learn English every day", "أتعلم الإنجليزية كل يوم"],
+            ["Practice makes me better", "التدريب يجعلني أفضل"]
+          ],
+          "grammarNotes": [
+            "Easy ↔ Difficult: سهل ↔ صعب. أضداد. The lesson is easy, the exam is difficult.",
+            "I learn English = أتعلم الإنجليزية. learn + لغة/موضوع: learn English, learn math.",
+            "Practice makes perfect = التدريب يصنع الكمال. مثل شائع. makes + مفعول + صفة: makes me better."
+          ]
+        }
+      ]
+    }
+  ]
+}

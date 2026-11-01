@@ -1,0 +1,70 @@
+{
+  "units": [
+    {
+      "title": "السفر والتسوق",
+      "color": "#ff9600",
+      "lessons": [
+        {
+          "name": "المطار",
+          "emoji": "✈️",
+          "words": [
+            ["Ticket", "تذكرة", "🎫"],
+            ["Passport", "جواز سفر", "🛂"],
+            ["Airport", "مطار", "🛫"],
+            ["Luggage", "حقائب", "🧳"],
+            ["Flight", "رحلة", "🛩️"]
+          ],
+          "sentences": [
+            ["Where is my ticket", "أين تذكرتي"],
+            ["I lost my passport", "لقد أضعت جواز سفري"]
+          ],
+          "grammarNotes": [
+            "أسئلة Wh-: Where is...? (أين...؟), What is...? (ماذا...؟). نستخدم is مع المفرد و are مع الجمع.",
+            "I lost = أضعت (ماضي بسيط). نضيف ed للأفعال المنتظمة في الماضي: lost هي صيغة غير منتظمة من lose.",
+            "My = صفة ملكية قبل الاسم: my ticket, my passport, my luggage."
+          ]
+        },
+        {
+          "name": "الفندق",
+          "emoji": "🏨",
+          "words": [
+            ["Hotel", "فندق", "🏨"],
+            ["Room", "غرفة", "🛏️"],
+            ["Key", "مفتاح", "🔑"],
+            ["Reservation", "حجز", "📋"],
+            ["Breakfast", "فطور", "🥐"]
+          ],
+          "sentences": [
+            ["I need a room", "أحتاج غرفة"],
+            ["Breakfast is ready", "الفطور جاهز"]
+          ],
+          "grammarNotes": [
+            "I need = أحتاج. نستخدم need + اسم أو need to + فعل: I need a room / I need to sleep.",
+            "a room (غرفة واحدة غير محددة) مقابل the room (الغرفة المحددة). a/an للأشياء الجديدة، the للأشياء المعروفة.",
+            "is ready = جاهز. نستخدم is مع المفرد لوصف الحالة: breakfast is ready, the room is clean."
+          ]
+        },
+        {
+          "name": "التسوق",
+          "emoji": "🛍️",
+          "words": [
+            ["Shop", "متجر", "🏪"],
+            ["Price", "سعر", "🏷️"],
+            ["Money", "مال", "💵"],
+            ["Cheap", "رخيص", "👍"],
+            ["Expensive", "غالي", "💎"]
+          ],
+          "sentences": [
+            ["How much is this", "بكم هذا"],
+            ["It is too expensive", "إنه غالي جدا"]
+          ],
+          "grammarNotes": [
+            "للسؤال عن السعر: How much is...? / How much are...? نستخدم is مع المفرد و are مع الجمع.",
+            "too = جدا/بشكل مفرط: too expensive, too cheap, too big. تختلف عن very التي تعني جدا (إيجابية).",
+            "It is = إنه. نستخدم it للأشياء غير العاقلة: it is expensive, it is cheap."
+          ]
+        }
+      ]
+    }
+  ]
+}

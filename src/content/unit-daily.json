@@ -1,0 +1,416 @@
+{
+  "units": [
+    {
+      "title": "الحياة اليومية 2",
+      "color": "#00cd9c",
+      "lessons": [
+        {
+          "name": "الجسم",
+          "emoji": "🧍",
+          "words": [
+            ["Hand", "يد", "✋"],
+            ["Eye", "عين", "👁️"],
+            ["Ear", "أذن", "👂"],
+            ["Nose", "أنف", "👃"],
+            ["Mouth", "فم", "👄"]
+          ],
+          "sentences": [
+            ["I see with my eyes", "أرى بعيني"],
+            ["Wash your hands", "اغسل يديك"]
+          ],
+          "grammarNotes": [
+            "مع أعضاء الجسم نستخدم صفات الملكية: my eyes, your hands, his nose (وليس the eyes للنفس).",
+            "with = بـ/بواسطة: I see with my eyes, I eat with my mouth. تعبر عن الأداة أو الوسيلة.",
+            "Wash your hands = اغسل يديك. الأمر + صفة الملكية + الاسم."
+          ]
+        },
+        {
+          "name": "الملابس",
+          "emoji": "👕",
+          "words": [
+            ["Shirt", "قميص", "👕"],
+            ["Shoes", "حذاء", "👟"],
+            ["Hat", "قبعة", "🧢"],
+            ["Dress", "فستان", "👗"],
+            ["Socks", "جوارب", "🧦"]
+          ],
+          "sentences": [
+            ["I wear a hat", "أرتدي قبعة"],
+            ["Her dress is new", "فستانها جديد"]
+          ],
+          "grammarNotes": [
+            "wear = يرتدي/يلبس. نستخدم wear للملابس: I wear a hat, she wears a dress.",
+            "Her dress = فستانها. ضمائر الملكية: my, your, his, her, our, their.",
+            "صفة الجمع: a new dress (مفرد) / new dresses (جمع). الصفة new لا تتغير لكن الاسم يأخذ s."
+          ]
+        },
+        {
+          "name": "الطقس",
+          "emoji": "⛅",
+          "words": [
+            ["Sun", "شمس", "☀️"],
+            ["Rain", "مطر", "🌧️"],
+            ["Snow", "ثلج", "❄️"],
+            ["Wind", "رياح", "💨"],
+            ["Cloud", "سحابة", "☁️"]
+          ],
+          "sentences": [
+            ["The sun is hot", "الشمس حارة"],
+            ["It is raining today", "إنها تمطر اليوم"]
+          ],
+          "grammarNotes": [
+            "It is = إنه (للطقس والزمن). It is raining / It is hot / It is cold. نستخدم it دائما للطقس.",
+            "The sun is hot: نستخدم is مع المفرد. الصفة hot لا تتغير مع الجمع: hot days.",
+            "raining (مستمر): It is raining الآن. لكن It rains every day (عادية)."
+          ]
+        },
+        {
+          "name": "المهن",
+          "emoji": "👨‍⚕️",
+          "words": [
+            ["Doctor", "طبيب", "👨‍⚕️"],
+            ["Teacher", "معلم", "👩‍🏫"],
+            ["Farmer", "مزارع", "👨‍🌾"],
+            ["Pilot", "طيار", "👨‍✈️"],
+            ["Chef", "طاه", "👨‍🍳"]
+          ],
+          "sentences": [
+            ["The doctor helps people", "الطبيب يساعد الناس"],
+            ["My father is a pilot", "أبي طيار"]
+          ],
+          "grammarNotes": [
+            "a / an: a doctor, a teacher, a farmer, a pilot (لأنها تبدأ بصوت ساكن). an قبل الصوت المتحرك.",
+            "The doctor helps people: مع he/she/it نضيف s للفعل: helps, works, teaches.",
+            "My father is a pilot: نستخدم a قبل المهنة: is a doctor, is a teacher (لأنها مهنة غير محددة)."
+          ]
+        },
+        {
+          "name": "الفواكه",
+          "emoji": "🍌",
+          "words": [
+            ["Banana", "موز", "🍌"],
+            ["Orange", "برتقال", "🍊"],
+            ["Grapes", "عنب", "🍇"],
+            ["Lemon", "ليمون", "🍋"],
+            ["Mango", "مانجو", "🥭"]
+          ],
+          "sentences": [
+            ["I like bananas", "أحب الموز"],
+            ["The orange is sweet", "البرتقالة حلوة"]
+          ],
+          "grammarNotes": [
+            "I like + اسم جمع: I like bananas, I like apples. لا نستخدم the قبل اسم عام في الإثبات.",
+            "The orange is sweet: the للإشارة لبرتقالة محددة. a/an للتعاريف العامة.",
+            "الجمع: banana → bananas, orange → oranges, grape → grapes (إضافة s)."
+          ]
+        },
+        {
+          "name": "الخضروات",
+          "emoji": "🥕",
+          "words": [
+            ["Carrot", "جزر", "🥕"],
+            ["Potato", "بطاطس", "🥔"],
+            ["Tomato", "طماطم", "🍅"],
+            ["Onion", "بصل", "🧅"],
+            ["Corn", "ذرة", "🌽"]
+          ],
+          "sentences": [
+            ["I cook potatoes", "أطبخ البطاطس"],
+            ["Tomatoes are red", "الطماطم حمراء"]
+          ],
+          "grammarNotes": [
+            "جمع غير منتظم: potato → potatoes, tomato → tomatoes (نضيف es بعد o). أما carrot → carrots (s فقط).",
+            "I cook = أطبخ. المضارع البسيط: I cook, he cooks (s مع المفرد الغائب).",
+            "Tomatoes are red: are مع الجمع. الصفة red لا تتغير."
+          ]
+        },
+        {
+          "name": "المدرسة",
+          "emoji": "🏫",
+          "words": [
+            ["School", "مدرسة", "🏫"],
+            ["Book", "كتاب", "📘"],
+            ["Pen", "قلم", "🖊️"],
+            ["Student", "طالب", "🧑‍🎓"],
+            ["Lesson", "درس", "📝"]
+          ],
+          "sentences": [
+            ["I go to school", "أذهب إلى المدرسة"],
+            ["The student has a pen", "الطالب لديه قلم"]
+          ],
+          "grammarNotes": [
+            "go to = يذهب إلى: go to school, go to work. لا نستخدم the قبل school/work (عادة).",
+            "has / have: I/you/we/they have, he/she/it has. The student has (لأن student مفرد غائب).",
+            "a pen = قلم (نكرة). the pen = القلم (معرفة). نستخدم a/an للإشارة لشيء جديد."
+          ]
+        },
+        {
+          "name": "المطبخ",
+          "emoji": "🍳",
+          "words": [
+            ["Spoon", "ملعقة", "🥄"],
+            ["Knife", "سكين", "🔪"],
+            ["Plate", "طبق", "🍽️"],
+            ["Cup", "كوب", "☕"],
+            ["Fridge", "ثلاجة", "🧊"]
+          ],
+          "sentences": [
+            ["Put the cup here", "ضع الكوب هنا"],
+            ["The milk is in the fridge", "الحليب في الثلاجة"]
+          ],
+          "grammarNotes": [
+            "Put = ضع/ضع (أمر). الأوامر: Put, Take, Open, Close, Wash.",
+            "in the fridge = في الثلاجة. نستخدم in للأماكن المغلقة: in the fridge, in the cup.",
+            "here / there: here (هنا), there (هناك). تأتي في نهاية الجملة: put it here, the book is there."
+          ]
+        },
+        {
+          "name": "المواصلات",
+          "emoji": "🚌",
+          "words": [
+            ["Car", "سيارة", "🚗"],
+            ["Bus", "حافلة", "🚌"],
+            ["Train", "قطار", "🚆"],
+            ["Bike", "دراجة", "🚲"],
+            ["Ship", "سفينة", "🚢"]
+          ],
+          "sentences": [
+            ["I take the bus", "أركب الحافلة"],
+            ["The train is fast", "القطار سريع"]
+          ],
+          "grammarNotes": [
+            "take the bus = أركب الحافلة. take + وسيلة: take the bus, take the train, take a taxi.",
+            "by + وسيلة (بدون the): by bus, by car, by train. لكن take the bus (مع the).",
+            "fast / slow = سريع / بطيء. The train is fast, the bike is slow. الصفة لا تتغير."
+          ]
+        },
+        {
+          "name": "المشاعر",
+          "emoji": "😊",
+          "words": [
+            ["Happy", "سعيد", "😊"],
+            ["Sad", "حزين", "😢"],
+            ["Angry", "غاضب", "😠"],
+            ["Tired", "متعب", "😴"],
+            ["Hungry", "جائع", "🤤"]
+          ],
+          "sentences": [
+            ["I am very happy", "أنا سعيد جدا"],
+            ["She is tired today", "هي متعبة اليوم"]
+          ],
+          "grammarNotes": [
+            "للحالة والمشاعر نستخدم am/is/are + صفة: I am happy, she is tired. الصفة لا تتغير مع الجنس.",
+            "very = جدا (تأتي قبل الصفة): very happy, very tired. أقوى من too (التي تعني مفرط).",
+            "I am / He is / She is / They are. لا نقول He am أو I is."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "الحياة اليومية 3",
+      "color": "#ff86d0",
+      "lessons": [
+        {
+          "name": "الصفات",
+          "emoji": "📏",
+          "words": [
+            ["Big", "كبير", "🐘"],
+            ["Small", "صغير", "🐜"],
+            ["Fast", "سريع", "🐆"],
+            ["Slow", "بطيء", "🐢"],
+            ["Hot", "ساخن", "🔥"]
+          ],
+          "sentences": [
+            ["The elephant is big", "الفيل كبير"],
+            ["The turtle is slow", "السلحفاة بطيئة"]
+          ],
+          "grammarNotes": [
+            "الصفة تأتي قبل الاسم: a red car (وليس a car red). وبعد الأرقام الأكبر من واحد يأخذ الاسم s: two cats.",
+            "الصفة لا تتغير مع الجمع: a big house – big houses. ونضع very قبل الصفة للتأكيد: very big.",
+            "الأضداد: big ↔ small, fast ↔ slow, hot ↔ cold. مفيدة للمقارنة."
+          ]
+        },
+        {
+          "name": "الأضداد",
+          "emoji": "↔️",
+          "words": [
+            ["Open", "مفتوح", "🔓"],
+            ["Closed", "مغلق", "🔒"],
+            ["Old", "قديم", "👴"],
+            ["New", "جديد", "🆕"],
+            ["Clean", "نظيف", "🧼"]
+          ],
+          "sentences": [
+            ["The shop is open", "المتجر مفتوح"],
+            ["This car is new", "هذه السيارة جديدة"]
+          ],
+          "grammarNotes": [
+            "Open ↔ Closed, Old ↔ New, Clean ↔ Dirty. الأضداد تساعد على الحفظ بالمقارنة.",
+            "This / These: this (هذا/هذه للمفرد) و these (هؤلاء للجمع): this car, these cars.",
+            "The shop is open = المتجر مفتوح (حالة). نستخدم is + صفة لوصف الحالة الحالية."
+          ]
+        },
+        {
+          "name": "الأماكن",
+          "emoji": "📍",
+          "words": [
+            ["Park", "حديقة", "🌳"],
+            ["Hospital", "مستشفى", "🏥"],
+            ["Bank", "بنك", "🏦"],
+            ["Street", "شارع", "🛣️"],
+            ["Market", "سوق", "🛒"]
+          ],
+          "sentences": [
+            ["We walk in the park", "نمشي في الحديقة"],
+            ["The bank is near", "البنك قريب"]
+          ],
+          "grammarNotes": [
+            "in / on / at: in the park (داخل), on the street (على), at the bank (عند). حروف الجر للمكان.",
+            "near = قريب, far = بعيد. The bank is near = البنك قريب (ظرف مكان).",
+            "We walk = نمشي (مضارع بسيط). walk هو الفعل، we الفاعل."
+          ]
+        },
+        {
+          "name": "الاتجاهات",
+          "emoji": "🧭",
+          "words": [
+            ["Left", "يسار", "⬅️"],
+            ["Right", "يمين", "➡️"],
+            ["Up", "أعلى", "⬆️"],
+            ["Down", "أسفل", "⬇️"],
+            ["Near", "قريب", "📍"]
+          ],
+          "sentences": [
+            ["Turn left here", "انعطف يسارا هنا"],
+            ["The hospital is on the right", "المستشفى على اليمين"]
+          ],
+          "grammarNotes": [
+            "Turn left / Turn right = انعطف يسار/يمين. الأوامر تُستخدم للاتجاهات: Turn, Go, Stop.",
+            "on the left / on the right = على اليسار / على اليمين. نستخدم on للاتجاه.",
+            "Go straight = امشِ للأمام. Go + اتجاه: go up, go down, go left, go right."
+          ]
+        },
+        {
+          "name": "الأيام والأشهر",
+          "emoji": "📅",
+          "words": [
+            ["Friday", "الجمعة", "🕌"],
+            ["Sunday", "الأحد", "🌞"],
+            ["Weekend", "عطلة الأسبوع", "🛋️"],
+            ["Month", "شهر", "🗓️"],
+            ["Year", "سنة", "🎆"]
+          ],
+          "sentences": [
+            ["Friday is a holiday", "الجمعة إجازة"],
+            ["I travel next month", "أسافر الشهر القادم"]
+          ],
+          "grammarNotes": [
+            "أيام الأسبوع تُكتب بحرف كبير: Friday, Sunday, Monday. الشهور أيضا: January, February.",
+            "next / last: next month (الشهر القادم), last year (السنة الماضية). ظروف زمن.",
+            "Friday is a holiday: is مع المفرد. holiday = إجازة (اسم مفرد)."
+          ]
+        },
+        {
+          "name": "الهوايات",
+          "emoji": "🎮",
+          "words": [
+            ["Music", "موسيقى", "🎵"],
+            ["Game", "لعبة", "🎮"],
+            ["Movie", "فيلم", "🎬"],
+            ["Paint", "يرسم", "🎨"],
+            ["Swim", "يسبح", "🏊"]
+          ],
+          "sentences": [
+            ["I love music", "أحب الموسيقى"],
+            ["We watch a movie", "نشاهد فيلما"]
+          ],
+          "grammarNotes": [
+            "I love / I like / I enjoy + اسم أو فعل بـ ing: I love music, I like swimming, I enjoy reading.",
+            "watch + اسم: watch a movie, watch TV. لكن see a movie (في السينما) مقابل watch (في البيت).",
+            "أفعال الهوايات بـ ing: swimming, painting, playing. لكن بعد I like/love يمكن الاسم أو gerund."
+          ]
+        },
+        {
+          "name": "الرياضة",
+          "emoji": "⚽",
+          "words": [
+            ["Football", "كرة القدم", "⚽"],
+            ["Tennis", "تنس", "🎾"],
+            ["Team", "فريق", "👥"],
+            ["Win", "يفوز", "🏆"],
+            ["Ball", "كرة", "🏀"]
+          ],
+          "sentences": [
+            ["Our team will win", "فريقنا سيفوز"],
+            ["He kicks the ball", "هو يركل الكرة"]
+          ],
+          "grammarNotes": [
+            "will = سـ (مستقبل بسيط): will win, will play, will go. نستخدم will للتوقع أو الوعد.",
+            "play + رياضة بدون the: play football, play tennis. لكن play the piano (بـ the للأدوات).",
+            "kicks = يركل (مضارع بسيط مع he/she/it نضيف s). الفعل kick + مفعول: kick the ball."
+          ]
+        },
+        {
+          "name": "التكنولوجيا",
+          "emoji": "💻",
+          "words": [
+            ["Phone", "هاتف", "📱"],
+            ["Computer", "حاسوب", "💻"],
+            ["Camera", "كاميرا", "📷"],
+            ["Internet", "إنترنت", "🌐"],
+            ["Message", "رسالة", "✉️"]
+          ],
+          "sentences": [
+            ["I send a message", "أرسل رسالة"],
+            ["My phone is new", "هاتفي جديد"]
+          ],
+          "grammarNotes": [
+            "send / receive: send a message (أرسل), receive a message (أستلم). أضداد مهمة.",
+            "My phone = هاتفي. ضمائر الملكية: my, your, his, her, our, their قبل الاسم.",
+            "is new = جديد. نستخدم is + صفة لوصف الحالة: is new, is old, is broken."
+          ]
+        },
+        {
+          "name": "الصحة",
+          "emoji": "💊",
+          "words": [
+            ["Health", "صحة", "💪"],
+            ["Medicine", "دواء", "💊"],
+            ["Fever", "حمى", "🤒"],
+            ["Headache", "صداع", "🤕"],
+            ["Cough", "سعال", "😷"]
+          ],
+          "sentences": [
+            ["Take your medicine", "تناول دواءك"],
+            ["I have a headache", "لدي صداع"]
+          ],
+          "grammarNotes": [
+            "have / has: I have a headache, she has a fever. نستخدم have للتعبير عن الأعراض.",
+            "Take your medicine = تناول دواءك. الأمر + صفة الملكية + الاسم.",
+            "a headache, a fever, a cough (نستخدم a قبل الأعراض المفردة)."
+          ]
+        },
+        {
+          "name": "الطبيعة",
+          "emoji": "🌲",
+          "words": [
+            ["Tree", "شجرة", "🌲"],
+            ["Flower", "زهرة", "🌸"],
+            ["River", "نهر", "🏞️"],
+            ["Mountain", "جبل", "⛰️"],
+            ["Sea", "بحر", "🌊"]
+          ],
+          "sentences": [
+            ["The river is long", "النهر طويل"],
+            ["I climb the mountain", "أتسلق الجبل"]
+          ],
+          "grammarNotes": [
+            "الصفة قبل الاسم: a long river, a high mountain, a deep sea. الترتيب ثابت.",
+            "I climb = أتسلق (مضارع بسيط). climb الجبل، swim في النهر، walk في الغابة.",
+            "The = للإشارة لعنصر محدد: the river (النهر المعروف)، the mountain (الجبل المحدد)."
+          ]
+        }
+      ]
+    }
+  ]
+}
