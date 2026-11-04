@@ -51,10 +51,14 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
   const [mtMatched, setMtMatched] = useState(0);
   const [showGrammar, setShowGrammar] = useState(false);
   const [showOutModal, setShowOutModal] = useState(false);
+  const [bankItems, setBankItems] = useState<string[]>([]);
+  const [mtLeftOrder, setMtLeftOrder] = useState<string[]>([]);
+  const [mtRightOrder, setMtRightOrder] = useState<string[]>([]);
   const comboRef = useRef(0);
   const bodyRef = useRef<HTMLDivElement>(null);
   const initialized = useRef(false);
   const initialHeartsRef = useRef(hearts);
+  const lastQIndexRef = useRef(-1);
 
   const q = questions[qIndex];
   const total = questions.length;
@@ -64,6 +68,26 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
     initialized.current = true;
     init();
   }, []);
+
+  // Compute stable shuffled layouts once per question
+  useEffect(() => {
+    if (!q || qIndex === lastQIndexRef.current) return;
+    lastQIndexRef.current = qIndex;
+
+    if (q.y === 'bk') {
+      const ws = (q.s as Sentence).en.split(' ');
+      const extras = shuffle(['the', 'is', 'a', 'you', 'we', 'am', 'not'])
+        .filter((x) => !ws.map((w) => w.toLowerCase()).includes(x))
+        .slice(0, 2);
+      setBankItems(shuffle([...ws, ...extras]));
+    } else if (q.y === 'sc') {
+      const letters = (q.a as string).split('');
+      setBankItems(shuffle(letters));
+    } else if (q.y === 'mt') {
+      setMtLeftOrder(q.p!.map((p) => p.en));
+      setMtRightOrder(shuffle(q.p!.map((p) => p.ar)));
+    }
+  }, [q, qIndex]);
 
   function init() {
     let words: Word[];
@@ -437,14 +461,12 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
     }
 
     if (q.y === 'mt') {
-      const E = shuffle(q.p!.map((p) => p.en));
-      const A = shuffle(q.p!.map((p) => p.ar));
       return (
         <>
           <h2>طابق الأزواج</h2>
           <div className="mt">
             <div className="opts" style={{ margin: 0 }}>
-              {E.map((t) => (
+              {mtLeftOrder.map((t) => (
                 <button
                   key={t}
                   className="opt en"
@@ -457,7 +479,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
               ))}
             </div>
             <div className="opts" style={{ margin: 0 }}>
-              {A.map((t) => (
+              {mtRightOrder.map((t) => (
                 <button
                   key={t}
                   className="opt"
@@ -475,11 +497,6 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
     }
 
     if (q.y === 'bk') {
-      const ws = (q.s as Sentence).en.split(' ');
-      const extras = shuffle(['the', 'is', 'a', 'you', 'we', 'am', 'not'])
-        .filter((x) => !ws.map((w) => w.toLowerCase()).includes(x))
-        .slice(0, 2);
-      const bank = shuffle([...ws, ...extras]);
       return (
         <>
           <h2>ترجم هذه الجملة</h2>
@@ -492,7 +509,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
             ))}
           </div>
           <div className="bank">
-            {bank.map((w, i) => (
+            {bankItems.map((w, i) => (
               <button
                 key={i}
                 className={`chip${bankUsed[i] ? ' empty' : ''}`}
@@ -625,8 +642,6 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
     }
 
     if (q.y === 'sc') {
-      const letters = (q.a as string).split('');
-      const bank = shuffle(letters);
       return (
         <>
           <h2>رتّب الحروف لتكوين الكلمة</h2>
@@ -638,7 +653,7 @@ export default function LessonPlayer({ lessonIndex, mode, unitIndex, practiceMis
             ))}
           </div>
           <div className="bank">
-            {bank.map((w, i) => (
+            {bankItems.map((w, i) => (
               <button
                 key={i}
                 className={`chip${bankUsed[i] ? ' empty' : ''}`}
